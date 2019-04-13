@@ -1,0 +1,52 @@
+
+root: true
+
+extends:
+  - 'plugin:prettier/recommended'
+
+plugins:
+  - '@typescript-eslint'
+  - 'eslint-plugin-react'
+
+parser: '@typescript-eslint/parser'
+
+globals:
+  modules: true
+
+env:
+  es6: true
+  browser: true
+
+rules:
+  # NOMAL TYPESCRIPT
+  # =========== ERRORS ===========
+  prefer-template: error # 文字列結合よりテンプレートリテラルを推奨する
+
+  # =========== WARNINGS ===========
+  no-console: 'warn'                            # コンソールログに対して警告を促す
+  newline-before-return: 'warn'                 # returnの前に改行を強制
+  prefer-object-spread: "warn"                  # Object.assignより分割代入を推奨する
+
+  # =========== OK ===========
+  # no-unused-expression: '' # 文の位置の表現の使用を許可する
+  no-boolean-literal-compare: 'none' # Prettierがやってくれるので無効化
+  no-inferrable-types: "none" # 型推論可能な場合は型を書かない
+
+  # REACT TYPESCRIPT https://github.com/yannickcr/eslint-plugin-react
+  # =========== ERRORS ===========
+  react/no-deprecated: "error"              # 非推奨メソッドの禁止（代案が必ずあるから）
+  react/no-did-mount-set-state: "error"     # DidMount地でsetStateを行うと無駄なレンダリングが走るため禁止
+  react/no-did-update-set-state: "error"    # 無限ループ防止 (無いとは思うけど)
+  react/no-will-update-set-state: "error"   # 無限ループ防止 (無いとは思うけど)
+  react/boolean-prop-naming:                # bool型は強制的にisやhasをつける
+    - error
+    - rule: "^(is|has)[A-Z]([A-Za-z0-9]?)+"
+
+  # =========== WARNINGS ===========
+  react/default-props-match-prop-types: "warn"  # デフォルトプロップスが無い場合警告を促す
+  react/no-typos: "warn"                        # typoの警告
+
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
