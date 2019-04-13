@@ -27,7 +27,7 @@
 
     /* Strict 型チェック オプション */
     "strict": true /* 厳密な型チェックのオプションをすべて有効にします。 */,
-    "noImplicitAny": true /* 暗黙的な 'any' 型を含む式と宣言に関するエラーを発生させます。 */,
+    // "noImplicitAny": true /* 暗黙的な 'any' 型を含む式と宣言に関するエラーを発生させます。 */,
     "strictNullChecks": true /* 厳格な null チェックを有効にします。 */,
     "strictFunctionTypes": true /* 関数の型の厳密なチェックを有効にします。 */,
     // "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
@@ -53,7 +53,7 @@
     // "rootDirs": [],                        /* 結合されたコンテンツがランタイムでのプロジェクトの構成を表すルート フォルダーの一覧。 */
     // "typeRoots": [],                       /* 含める型定義の元のフォルダーの一覧。 */
     // "types": [],                           /* コンパイルに含む型宣言ファイル。 */
-    // "allowSyntheticDefaultImports": true,  /* 既定のエクスポートがないモジュールからの既定のインポートを許可します。これは、型チェックのみのため、コード生成には影響を与えません。 */
+    "allowSyntheticDefaultImports": true,  /* 既定のエクスポートがないモジュールからの既定のインポートを許可します。これは、型チェックのみのため、コード生成には影響を与えません。 */
     // "esModuleInterop": true,                  /* すべてのインポートの名前空間オブジェクトを作成して、CommonJS と ES モジュール間の生成の相互運用性を有効にします。'allowSyntheticDefaultImports' を暗黙のうちに表します。 */
     // "preserveSymlinks": true,              /* symlink の実際のパスを解決しません。 */
 

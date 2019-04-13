@@ -755,6 +755,11 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@types/node@^11.13.4":
+  version "11.13.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.4.tgz#f83ec3c3e05b174b7241fadeb6688267fe5b22ca"
+  integrity sha512-+rabAZZ3Yn7tF/XPGHupKIL5EcAbrLxnTr/hgQICxbeuAfWtT0UZSfULE+ndusckBItcv4o6ZeOJplQikVcLvQ==
+
 "@types/pixi.js@^4.8.7":
   version "4.8.7"
   resolved "https://registry.yarnpkg.com/@types/pixi.js/-/pixi.js-4.8.7.tgz#23cea9ce7aaf6a51223a8fbe3c3d1c89f6048698"
@@ -874,6 +879,11 @@ aproba@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
+
+ar.js@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/ar.js/-/ar.js-1.6.2.tgz#317ab7ec74330a49c54a1ebd32b829382797eaba"
+  integrity sha512-DyY2p+burggQXTbhBdYVZCCxtmUufJuj4JhbNT3gYbPMvJR1NafpvNihf5Bdel3QBkwy+uRgDfoOm3Gj7OyhPg==
 
 are-we-there-yet@~1.1.2:
   version "1.1.5"
